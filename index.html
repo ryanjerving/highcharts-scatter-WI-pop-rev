@@ -31,7 +31,7 @@
         },
 
         subtitle: {
-          text: 'View <a href="PopCenterDistance.csv">data</a>, based on U.S. 2010 data for State mean population centers, Google map fastest route (driving) miles.', // EDIT link and text
+          text: 'View <a href="WIPerCapRev.csv">data</a>, based on Wisconsin Dept. of Revenue publication, "State Taxes and Aids."', // EDIT link and text
           useHTML: true
         },
 
@@ -52,13 +52,13 @@
 
         xAxis: {
           title: {
-            text: 'Longitude of State mean population centers (more negative = farther West)'  // EDIT to insert horizontal x-axis label
+            text: 'WI County Population'  // EDIT to insert horizontal x-axis label
           }
         },
 
         yAxis: {
           title: {
-            text: 'Distance from Capitol building to population center '   // EDIT to insert vertical y-axis label
+            text: 'Per cap. revenue collected (in dollars)'   // EDIT to insert vertical y-axis label
           }
         },
 
@@ -82,9 +82,9 @@
               point = this.point;
               // EDIT tooltip text labels below to match your data
               html = '<table>';
-              html += '<tr><th colspan="2"><h3>State: ' + point.name + '</h3></th></tr>';
-              html += '<tr><th>Longitude (decimal):</th><td>' + point.x + '</td></tr>';
-              html += '<tr><th>Distance from pop. to political center:</th><td>' + point.y + '</td></tr>';
+              html += '<tr><th colspan="2"><h3>County: ' + point.name + '</h3></th></tr>';
+              html += '<tr><th>Population:</th><td>' + point.x + '</td></tr>';
+              html += '<tr><th>Per cap. revenue:</th><td>' + point.y + '</td></tr>';
               html += '</table>';
 
               return html;
