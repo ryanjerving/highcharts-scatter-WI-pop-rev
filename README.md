@@ -1,7 +1,7 @@
 # highcharts-scatter-WI-pop-rev
 Showing correlation between municipal population and per-capita State revenue collected
 
-https://ryanjerving.github.io/highcharts-scatter-WI-pop-rev/
+https://ryanjerving.github.io/highcharts-scatter-WI-pop-rev/index.html
 
 ## license
 http://www.highcharts.com is free for personal websites, school sites, or non-profit organizations. Commercial use requires the purchase of a license.
